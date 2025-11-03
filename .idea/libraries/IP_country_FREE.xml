@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="IP-country-FREE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/perl/IP-country-FREE.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

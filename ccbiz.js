@@ -554,44 +554,55 @@ function setupRates() {
 var ignoreKeys = false;
 function keydown(e)
 {
-	if (ignoreKeys) return;
-	var keynum;
-	if(window.event) // IE
-	{
-		keynum = e.keyCode
-	}
-	else if(e.which) // Netscape/Firefox/Opera
-	{
-		keynum = e.which
-	}
-	// alert(keynum);
-	if (keynum >=48 && keynum <= 57) {
-		var s = "";
-		if (calcside == 1) s = "2";
-		ignoreKeys=true;
-		var num = keynum-48;butclick('db'+s+num,num); 
-	} else if (keynum >=96 && keynum <= 105) {
-		var s = "";
-		if (calcside == 1) s = "2";
-		ignoreKeys=true;
-		var num = keynum-96;butclick('db'+s+num,num); 
-	} 
-	else if (keynum == 8 || keynum == 13 || keynum == 46 ) {
-		var s = "";
-		if (calcside == 1) s = "2";
-		ignoreKeys=true;
-		butclick('db'+s+'bs','&nbsp;&nbsp;');
-	} else if (keynum == 9) {
-		if (calcside == 1) setCalcSide(2); else setCalcSide(1);
-		ignoreKeys=true;
-		//	setTimeout( ignoreKeys=false, 600);
-	} else if (keynum == 190 || keynum == 110) {
-		var s = "";
-		if (calcside == 1) s = "2";
-		ignoreKeys=true;
-		butclick('db'+s+'dp','.');
-	} 
-	return false;
+    if (ignoreKeys) return true;
+    var handled = false;
+    var keynum;
+    if(window.event) // IE
+    {
+        keynum = e.keyCode
+    }
+    else if(e.which) // Netscape/Firefox/Opera
+    {
+        keynum = e.which
+    }
+    // alert(keynum);
+    if (keynum >=48 && keynum <= 57) {
+        var s = "";
+        if (calcside == 1) s = "2";
+        ignoreKeys=true;
+        var num = keynum-48;butclick('db'+s+num,num);
+        handled = true;
+    } else if (keynum >=96 && keynum <= 105) {
+        var s = "";
+        if (calcside == 1) s = "2";
+        ignoreKeys=true;
+        var num = keynum-96;butclick('db'+s+num,num);
+        handled = true;
+    }
+    else if (keynum == 8 || keynum == 13 || keynum == 46 ) {
+        var s = "";
+        if (calcside == 1) s = "2";
+        ignoreKeys=true;
+        butclick('db'+s+'bs','&nbsp;&nbsp;');
+        handled = true;
+    } else if (keynum == 9) {
+        if (calcside == 1) setCalcSide(2); else setCalcSide(1);
+        ignoreKeys=true;
+        handled = true;
+        //	setTimeout( ignoreKeys=false, 600);
+    } else if (keynum == 190 || keynum == 110) {
+        var s = "";
+        if (calcside == 1) s = "2";
+        ignoreKeys=true;
+        butclick('db'+s+'dp','.');
+        handled = true;
+    }
+	console.log("keydown "+keynum+" handled="+handled);
+    if (handled) {
+        if (e && e.preventDefault) e.preventDefault();
+        return false;
+    }
+    return true;
 }
 function keyup(e)
 {
