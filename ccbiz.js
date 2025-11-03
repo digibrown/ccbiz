@@ -463,7 +463,7 @@ ccybuts1 = addBR(ccybuts1);
 		if (c && c % 6 == 0)
 			ccybuts1 = addBR(ccybuts1);
 		c++;
-		var cl = "ccy ccy1 flag " + ccys.values[i].code;
+		var cl = "ccy ccy1  " + ccys.values[i].code;
 		if (ccy1 == ccys.values[i].code)
 			cl += " ccy1sel";
 		else

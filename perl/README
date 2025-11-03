@@ -1,6 +1,6 @@
 Installation is really easy and there are no additional files required except for
 the actual data file which you download from here:
-http://software77.net/cgi-bin/ip-country/geo-ip.pl
+https://software77.net/cgi-bin/ip-country/geo-ip.pl
 (or you can use someone else's provided the format is the same)
 
 Uploading instructions, setting of parameters and variables are
@@ -14,7 +14,7 @@ all documented below. Enjoy!
 3) Make sure you upload the script in ASCII mode or it won't work.
 
 4) CHMOD it to 755.
-5) Unzip the file you downloaded from http://software77.net/cgi-bin/ip-country/geo-ip.pl
+5) Unzip the file you downloaded from https://software77.net/cgi-bin/ip-country/geo-ip.pl
    and upload it to the same directory as the script. If you call it 'IpToCountry.csv'
    on your server (Case Sensitive!!) you won't need to change anything in the Perl code.
 6) There are only 3 variables you worth mentioning in the code you can change:

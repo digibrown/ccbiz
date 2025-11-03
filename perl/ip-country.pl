@@ -17,8 +17,8 @@
 # FINANCIAL DAMAGE, YOU AGREE YOU HAVE NO CLAIM. IF YOU DO NOT ACCEPT THESE
 # TERMS YOU MAY NOT USE THIS SOFTWARE.
 ###############################################################################
-# WEBSITE: http://webnet77.com
-# DOWNLOAD: http://webnet77.com/scripts/index.html
+# WEBSITE: https://webnet77.com
+# DOWNLOAD: https://webnet77.com/scripts/index.html
 ###############################################################################
 use strict;
 use CGI qw(:standard);

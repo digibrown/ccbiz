@@ -159,7 +159,7 @@ background-color:white;
   font-family: 'Reenie Beanie';
   font-style: normal;
   font-weight: normal;
-  src: local('Reenie Beanie'), url('http://themes.googleusercontent.com/font?kit=ljpKc6CdXusL1cnGUSamX4jjx0o0jr6fNXxPgYh_a8Q') format('truetype');
+  src: local('Reenie Beanie'), url('https://themes.googleusercontent.com/font?kit=ljpKc6CdXusL1cnGUSamX4jjx0o0jr6fNXxPgYh_a8Q') format('truetype');
 }
 
 #intro {
@@ -352,7 +352,7 @@ text-shadow: 1px 1px 1px #000;
     -webkit-border-radius: 5px;
     display: inline;
     font-size: 10px;
-	background-position:7px 5px;
+	/*background-position:7px 5px;*/
 	background-repeat:no-repeat;
 }
 
