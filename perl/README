@@ -1,0 +1,34 @@
+Installation is really easy and there are no additional files required except for
+the actual data file which you download from here:
+http://software77.net/cgi-bin/ip-country/geo-ip.pl
+(or you can use someone else's provided the format is the same)
+
+Uploading instructions, setting of parameters and variables are
+all documented below. Enjoy!
+
+1) Make sure the first line of the script points to Perl for your server. The
+   default is: #!/usr/bin/perl. It can also be #!/usr/local/bin/perl on some
+   servers.
+2) Upload the script to a web accessible directory on your server that can execute
+   CGI scripts. For example the cgi-bin directory on your website.
+3) Make sure you upload the script in ASCII mode or it won't work.
+
+4) CHMOD it to 755.
+5) Unzip the file you downloaded from http://software77.net/cgi-bin/ip-country/geo-ip.pl
+   and upload it to the same directory as the script. If you call it 'IpToCountry.csv'
+   on your server (Case Sensitive!!) you won't need to change anything in the Perl code.
+6) There are only 3 variables you worth mentioning in the code you can change:
+my $geofile = 'IpToCountry.csv';
+The name of the data file. If you put it elsewhere on your server, be sure
+to include the full path here.
+
+my $date_delimiter = '-';
+The symbol used between the parts of the date
+
+my $date_format = 'mmm-dd-yyyy';
+The display format of the date.
+7) Don't forget to update your database form time to time by downloading the latest data file.
+
+BRM - 2005
+----------
+

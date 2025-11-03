@@ -1,0 +1,43 @@
+/* --------------------------------------------------------------       ie.css      Contains every hack for Internet Explorer versions prior    to IE7, so that our core files stay sweet and nimble.   -------------------------------------------------------------- *//* Make sure the layout is centered in IE5 */body        { text-align: center; }#container  { text-align: left; }#banner  { text-align: left; }#logo  { text-align: left; }#main  { text-align: left; }#footer  { text-align: left; }.digbuts {
+   line-height:20px;}.ratebuts {
+   line-height:20px;
+ 
+} 
+.ccybuts {line-height:14px;top:170px}  /* This fixes the problem where IE6 adds an extra 3px margin to   two columns that are floated up against each other. */* html .column { overflow-x: hidden; } /* IE6 fix */.pull-1, .pull-2, .pull-3, .pull-4,.push-1, .push-2, .push-3, .push-4, ul, ol {  position: relative; /* Keeps IE6 from cutting pulled/pushed images */}/* Fixes incorrect styling of legend in IE6 fieldsets. */legend { margin-bottom:1.4em; }/* Fixes incorrect placement of numbers in ol's in IE6/7 */ol { margin-left:2em; }
+
+#wrapper {
+    width: 740px;
+    margin: 5px auto;
+}
+
+#banner {
+margin-top:0px;
+        margin-bottom:10px;
+    height: 90px;
+    width: 100%;
+}
+.shadow {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+#title {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#111111');
+}
+
+.butdiv {
+  padding:16px 2px 0px 2px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.display {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.shadow {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.digbuts {margin:2px;margin-left:8px;}
+.digbuts div {margin:3px;padding-left:6px;padding-right:6px;}
+.ccybuts div {padding-left:4px;padding-right:4px;background-position:6px 4px;}

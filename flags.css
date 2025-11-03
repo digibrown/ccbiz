@@ -1,0 +1,66 @@
+
+.flag {
+    display: inline-block;zoom: 1;*display: inline;
+    margin: 2px;
+    margin-top: 0px;
+    width: 16px;
+    height: 11px;
+    vertical-align:middle;
+    background-image: url('flags_sprite.gif');
+}
+.AUD {	background-position: 0 -264px; }
+.USD {	background-position: -64px -1034px; }
+.EUR {	background-position: 0 -1518px; }
+.CAD {  background-position: 0 -770px; }
+.CHF {  background-position: 0 -902px; }
+.NZD {  background-position: -32px -1695px; }
+.GBP {	background-position: 0 -1716px; }
+.HKD {	background-position: -32px -88px;  }
+.JPY {	background-position: -32px -462px; }
+.IDR {	background-position: -32px -220px;}
+.INR {	background-position: -32px -286px;}
+.CNY {  background-position: 0 -1012px;}
+.DKK {	background-position: 0 -1254px; }
+.KRW {	background-position: -32px -638px;}
+.KWD {	background-position: -32px -660px;}
+.MYR {	background-position: -32px -1409px;}
+.NOK {	background-position: -32px -1607px;}
+.PKR {	background-position: -32px -1849px;}
+.PLN {	background-position: -32px -1871px;}
+.SEK {	background-position: -64px -286px; }
+.SGD {	background-position: -64px -308px; }
+.THB {	background-position: -64px -704px;}
+.SAR {	background-position: -64px -176px;}
+.PHP {  background-position: -32px -1827px;}
+.ZAR {	background-position: -64px -1364px;}
+.BHD {	background-position: 0 -484px;}
+.MOP {	background-position: -32px -1189px;}
+.AED {	background-position: 0 -22px;  }
+.PGK {	background-position: -32px -1805px; }
+.TWD {	background-position: -64px -924px; }
+.VND {	background-position: -64px -1210px;  }
+.FJD {	background-position: 0 -1584px; }
+.RUB {	background-position: -64px -132px;  }
+.BRL {	background-position: 0 -616px; }
+.CZK {	background-position: 0 -1188px; }
+.TRY {	background-position: 0 -1386px;  }
+.OMR {	background-position: -32px -1717px; }
+.QAR {	background-position: -64px -44px;  }
+/*.XAU {	background: url('/erc/images/flags/gold-icon.jpg'); }*/
+.KES {	background-position: -32px -484px; }
+.EGP {	background-position: 0 -1386px; }
+.LKR {	background-position: -32px -814px; }
+.BDT {	background-position: 0 -396px;  }
+.NGN {	background-position: -32px -1541px;  }
+.UAH {	background-position: -64px -968px; }
+.SBD  {background-position: -64px -198px;}
+.WST  {background-position: -64px -1298px;}
+.CLP      {background-position: 0 -968px;}
+.HUF  {background-position: -32px -198px; }
+.ISK  {background-position: -32px -374px;}
+.LVL  {background-position: -32px -924px;}
+.ILS  {background-position: -32px -264px;}
+.MXN  {background-position: -32px -1387px;}
+.XPFNC{ background-position: -32px -1475px; width: 16px; height: 11px; }
+.XPFPF{ background-position: -32px -1783px; width: 16px; height: 11px; }
+.XPFWF{ background-position: -64px -1276px; width: 16px; height: 11px; }
